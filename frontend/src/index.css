@@ -36,24 +36,53 @@ body {
 }
 
 @keyframes shake {
-	10%,
-	90% {
+	10%, 90% {
 		transform: translate3d(-1px, 0, 0);
 	}
-
-	20%,
-	80% {
+	20%, 80% {
 		transform: translate3d(2px, 0, 0);
 	}
-
-	30%,
-	50%,
-	70% {
+	30%, 50%, 70% {
 		transform: translate3d(-4px, 0, 0);
 	}
-
-	40%,
-	60% {
+	40%, 60% {
 		transform: translate3d(4px, 0, 0);
+	}
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+	body {
+		background-size: contain; /* Adjust background size for smaller screens */
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	body {
+		background-size: contain; /* Adjust background size for small screens */
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	body {
+		background-size: cover; /* Default background size for medium devices */
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	body {
+		background-size: cover; /* Default background size for large devices */
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	body {
+		background-size: cover; /* Default background size for extra large devices */
 	}
 }
